@@ -1,0 +1,40 @@
+.RecipeCard-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 1rem;
+}
+
+.RecipeCard {
+  display: grid;
+  grid-template-columns: 60% 30%;
+}
+
+.RecipeCard-container:hover {
+  color: #038c73;
+  cursor: pointer;
+}
+
+.RecipeCard-container-img-container {
+  overflow: hidden;
+  width: 300px;
+}
+
+.RecipeCard-container-img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.RecipeCard-container:hover img {
+  transform: scale(1.1);
+}
+
+.RecipeCard-container-text-container {
+  text-align: left;
+}
+
+@media only screen and (max-width: 755px) {
+  .RecipeCard-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

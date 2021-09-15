@@ -1,0 +1,10 @@
+.Navbar {
+  background-color: #038c73;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.Navbar h1 {
+  margin: 0;
+}
