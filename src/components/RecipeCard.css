@@ -14,12 +14,12 @@
   cursor: pointer;
 }
 
-.RecipeCard-container-img-container {
+.RecipeCard-img-container {
   overflow: hidden;
-  width: 300px;
+  width: 200px;
 }
 
-.RecipeCard-container-img-container img {
+.RecipeCard-img-container img {
   max-height: 100%;
   max-width: 100%;
   transition: transform 0.5s ease;

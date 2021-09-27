@@ -40,17 +40,17 @@ export default function RecipeSteps({
             <h4>Ingredients</h4>
             <ul>
               {currentRecipe?.ingredients.map((ingredient) => (
-                <li>
+                <li key={ingredient.uuid}>
                   <span>
                     {`${ingredient?.amount} ${ingredient?.measurement} ${ingredient?.name}`}
                   </span>
                   <span className="RecipeSteps-specials">
-                    {checkSpecials(ingredient).map((el) => (
-                      <>
+                    {checkSpecials(ingredient).map((el, index) => (
+                      <div key={index}>
                         <span>{el?.title}</span>
                         <span>{el?.text}</span>
                         <span>{el?.type}</span>
-                      </>
+                      </div>
                     ))}
                   </span>
                 </li>
