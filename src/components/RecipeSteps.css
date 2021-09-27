@@ -63,6 +63,11 @@
   align-items: flex-start;
 }
 
+.RecipeSteps-specials div {
+  display: flex;
+  align-items: center;
+}
+
 .RecipeSteps-specials span {
   background-color: #f2ece4;
   border-radius: 1rem;
